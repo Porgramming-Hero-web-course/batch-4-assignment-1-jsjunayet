@@ -6,5 +6,5 @@ function sumArray (number:number[]) : number {
     }
     return sum
 }
-const result : number = sumArray([1, 2, 3, 4, 5]);
-console.log(result);
+const result1 : number = sumArray([1, 2, 3, 4, 5]);
+console.log(result1);

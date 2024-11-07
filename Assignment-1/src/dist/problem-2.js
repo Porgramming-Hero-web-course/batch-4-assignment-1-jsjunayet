@@ -15,5 +15,5 @@ function removeDuplicates(number) {
     }
     return uniqueArray;
 }
-const results = removeDuplicates([1, 2, 2, 3, 4, 4, 5]);
-console.log(results);
+const result_2 = removeDuplicates([1, 2, 2, 3, 4, 4, 5]);
+console.log(result_2);
