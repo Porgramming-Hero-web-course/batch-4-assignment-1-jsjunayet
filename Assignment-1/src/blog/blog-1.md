@@ -10,13 +10,14 @@ function Example(id: string | number) {
     console.log(id);
 }
 
-printID(10); // Output: 10
-printID("hello world"); // Output: hello world
+printID(10); 
+printID("hello world"); 
 
 ## Intersection Type:
 
 Intersection types allow you to combine all the properties of multiple types into a single type. It is represented by an ampersand (&) symbol.
 
+example 
 
 interface User {
     name: string;
@@ -60,6 +61,6 @@ type EmployeePerson = Person & Employee;
 
 const employee: EmployeePerson = { name: "Alice", jobTitle: "Engineer" };
 
-## significance 
+## significance significance of union and intersection types
 
 Union and Intersection types, we can make our code more flexible (Union) or more specific and detailed (Intersection), which helps in creating better, more efficient code
