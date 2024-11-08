@@ -10,25 +10,25 @@ function Example(id: string | number) {
     console.log(id);
 }
 
-printID(10); 
+printID(10); <br>
 printID("hello world"); 
 
 ## Intersection Type:
 
 Intersection types allow you to combine all the properties of multiple types into a single type. It is represented by an ampersand (&) symbol.
 
-example 
+example:
 
 interface User {
     name: string;
     email: string;
-}
+}<br>
 
 interface Admin {
     role: "admin";
 }
 
-type AdminUser = User & Admin;
+type AdminUser = User & Admin; <br>
 
 const adminUser: AdminUser = {
     name: "John Doe",
@@ -42,8 +42,8 @@ Union Types (|): Use when a value can be one of several types. For example, when
 
 Example:
 
-let value: string | number;
-value = "Hello";
+let value: string | number;<br>
+value = "Hello";<br>
 value = 123; 
 
 Intersection Types (&): Use when you need to combine multiple types into one, meaning the value must have all the properties of each type. This is useful when combining different object structures.
@@ -52,12 +52,12 @@ Example:
 
 interface Person {
     name: string;
-}
+}<br>
 interface Employee {
     jobTitle: string;
-}
+}<br>
 
-type EmployeePerson = Person & Employee;
+type EmployeePerson = Person & Employee; <br>
 
 const employee: EmployeePerson = { name: "Alice", jobTitle: "Engineer" };
 
